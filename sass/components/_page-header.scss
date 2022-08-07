@@ -1,0 +1,152 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+/* флексбокс для навигации */
+.main-nav {
+  display: flex;
+  align-items: center;
+
+  /* outline: 2px solid green;  */
+
+  &__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    /* outline: 2px solid yellow;  */
+  }
+}
+
+/* Оформление списков навигации и контактов */
+
+.logo {
+  color: var(--logo-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  /* identical to box height */
+  text-decoration: none;
+
+  /* Лого вторая часть */
+  &__part--black
+
+/* ,.logo-part:focus,.logo-part:hover */ {
+    --logo-color: #000000;
+    color: var(--logo-color);
+  }
+}
+
+/* лого первая часть */
+.main-nav__logo
+
+/* ,.logo:hover,.logo:focus  */ {
+  margin-right: 95px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  /* outline: 2px solid blue;  */
+}
+
+/* отступ между ссылками навигцации */
+.main-nav__item + .main-nav__item {
+  margin-left: 50px;
+}
+
+/* 
+альтернтивный отступ между ссылками навигации
+
+.main-nav__list .main-nav__item:not(:last-child)  {
+    margin-right: 50px;
+} */
+
+/* Ссылки навигации */
+.main-nav__link {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--nav-link-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* outline: 2px solid green;  */
+
+  &--highlighted::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #2196f3;
+    border-radius: 2px;
+  }
+
+  /* Подсветка текущей страницы и наведения */
+  &--highlighted,
+  &:hover,
+  &:focus {
+    color: var(--focus-color);
+  }
+}
+
+/* оформление контактов */
+.contacts {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+
+  list-style: none;
+
+  /* outline: 2px solid black;  */
+
+  &__item {
+    /* outline: 2px solid gold; */
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* outline: 2px solid green;   */
+  }
+}
+
+/* отступ между контактами */
+.contacts__item + .contacts__item {
+  margin-left: 50px;
+}
+
+/* альтернтивный отступ между контактами */
+/* .contacts-item:not(:last-child) {
+    margin-right: 50px;
+} */
+
+.contacts__link:hover,
+.contacts__link:focus {
+  color: var(--focus-color);
+}
+
+.contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}

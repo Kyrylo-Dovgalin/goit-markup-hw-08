@@ -1,0 +1,81 @@
+/* Секция герой */
+.hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  background-color: #c4c4c4;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /* outline: 2px solid black;  */
+
+  /* Оформления заголовка */
+  &__title {
+    margin: 0;
+    margin-bottom: 30px;
+
+    /* background-color: #757575; временное значение */
+    --title-color: #ffffff;
+    color: var(--title-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    /* or 136% */
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    /* outline: 2px solid black;  */
+  }
+}
+
+/* кнопка герой */
+.hero__button {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 32px;
+  padding-left: 32px;
+  margin-right: auto;
+  margin-left: auto;
+
+  border: none;
+  border-radius: 4px;
+
+  --button-text-color: #ffffff;
+  color: var(--button-text-color);
+  background-color: var(--focus-color);
+  font-size: 16px;
+  font-weight: 700; /*????*/
+  line-height: 1.8;
+  /* identical to box height, or 188% */
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* outline: 2px solid black;  */
+
+  &:hover,
+  &:focus {
+    --button-text-color: #000000;
+    color: var(--button-text-color);
+    --focus-color: #ffffff;
+    background-color: var(--focus-color);
+  }
+}

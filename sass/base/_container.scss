@@ -1,0 +1,23 @@
+/* контейнер */
+.container {
+  width: 1200px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  /* outline: 2px solid tomato;  */
+}
+
+/* флексбокс */
+.container--flex {
+  display: flex;
+  align-items: center;
+}
+
+.container--flex-baseline {
+  display: flex;
+  align-items: baseline;
+}
