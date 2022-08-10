@@ -1,0 +1,42 @@
+.logo {
+  color: var(--logo-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  /* identical to box height */
+  text-decoration: none;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: calc(31 / 26);
+  }
+
+  /* Лого вторая часть */
+  &__part--black
+
+/* ,.logo-part:focus,.logo-part:hover */ {
+    --logo-color: #000000;
+    color: var(--logo-color);
+  }
+}
+
+/* лого первая часть */
+.main-nav__logo {
+  margin: 0;
+  margin-right: 250px;
+  padding: 16px 0px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+    padding: 26px 0px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    /* outline: 2px solid blue;  */
+  }
+}

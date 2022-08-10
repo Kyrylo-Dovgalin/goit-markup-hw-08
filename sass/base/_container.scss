@@ -1,6 +1,6 @@
 /* контейнер */
+
 .container {
-  width: 1200px;
   margin-top: 0;
   margin-bottom: 0;
   margin-right: auto;
@@ -8,7 +8,17 @@
   padding-left: 15px;
   padding-right: 15px;
 
-  /* outline: 2px solid tomato;  */
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
 }
 
 /* флексбокс */
@@ -17,7 +27,7 @@
   align-items: center;
 }
 
-.container--flex-baseline {
-  display: flex;
-  align-items: baseline;
-}
+// .container--flex-baseline {
+//   display: flex;
+//   align-items: baseline;
+// }

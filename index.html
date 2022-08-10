@@ -28,46 +28,86 @@
     <!-- Header -->
     <header class="header">
       <div class="container container--flex">
-        <!-- Навигация -->
-        <nav class="main-nav">
-          <a class="logo main-nav__logo" href="./index.html"
-            >Web<span class="logo__part--black">Studio</span></a
+        <a class="logo main-nav__logo" href="./index.html"
+          >Web<span class="logo__part--black">Studio</span></a
+        >
+
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            class="menu-button__icon"
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
           >
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a
-                class="main-nav__link main-nav__link--highlighted"
-                href="./index.html"
-                >Студия</a
+            <use
+              class="icon-menu-close"
+              href="./images/icons.svg#icon-menu-close"
+            ></use>
+            <use
+              class="icon-menu-open"
+              href="./images/icons.svg#icon-menu-open"
+            ></use>
+          </svg>
+        </button>
+        <!-- Навигация -->
+        <div class="menu-container" id="menu-container" data-menu>
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a
+                  class="main-nav__link main-nav__link--highlighted"
+                  href="./index.html"
+                  >Студия</a
+                >
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Контакты -->
+          <ul class="contacts">
+            <li class="contacts__item">
+              <a class="contacts__link" href="tel:+380961111111">
+                <svg class="contacts__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
               >
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="">Контакты</a>
+            <li class="contacts__item">
+              <a class="contacts__link" href="mailto:info@devstudio.com">
+                <svg class="contacts__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
           </ul>
-        </nav>
-        <!-- Контакты -->
-        <ul class="contacts">
-          <li class="contacts__item">
-            <a class="contacts__link" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts__item">
-            <a class="contacts__link" href="tel:+380961111111">
-              <svg class="contacts__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          <ul class="list social-list header__social-list">
+            <li class="header-social__item" lang="en">
+              <a class="header-social__link" href="">Instagram</a>
+            </li>
+            <li class="header-social__item" lang="en">
+              <a class="header-social__link" href="">Twitter</a>
+            </li>
+            <li class="header-social__item" lang="en">
+              <a class="header-social__link" href="">Facebook</a>
+            </li>
+            <li class="header-social__item" lang="en">
+              <a class="header-social__link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- Main -->
@@ -703,6 +743,7 @@
       </div>
     </div>
 
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/subscription.js"></script>
     <script src="./js/modal.js"></script>
   </body>
