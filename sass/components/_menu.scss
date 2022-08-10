@@ -47,21 +47,16 @@
     height: 100%;
     z-index: 999;
     padding: 48px 40px;
+    overflow: scroll;
 
     &.is-open {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    @media screen and (min-width: $tablet) {
-      display: flex;
-      align-items: center;
+      display: block;
     }
   }
 
   @media screen and (min-width: 768px) {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     flex-grow: 1;
   }

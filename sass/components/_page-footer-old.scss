@@ -5,24 +5,24 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  text-align: center;
-
   --background-color: #2f303a;
   background-color: var(--background-color);
 
   &__address {
-    margin-bottom: 60px;
-    // @media screen and (min-width: $tablet) {
-    //   margin-right: 70px;
-    // }
+    margin-right: 70px;
+    /* outline: 1px solid white; */
   }
 }
 
 .footer__logo {
   display: inline-block; /*!!!!!!*/
   margin: 0;
+  /* margin-right: 156px; */
+
   margin-bottom: 20px;
   padding: 0;
+  /* padding-top: 25px;
+    padding-bottom: 25px; */
 }
 
 .logo__part--white {
@@ -32,8 +32,9 @@
 
 .physical-address {
   display: inline-block;
+
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 9px;
 
   --text-color: #ffffff;
   color: var(--text-color);
@@ -44,16 +45,17 @@
 
 .footer__contacts {
   display: inline-block;
-  margin: 0;
   /*!!!!!!*/
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   text-decoration: none;
 
+  /* outline: 2px solid white; */
+
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:not(:last-child) {
-    margin-bottom: 8px;
+    margin-bottom: 9px;
   }
 
   &:hover,
@@ -69,17 +71,20 @@
   text-transform: uppercase;
   --text-color: #ffffff;
   color: var(--text-color);
+
+  /* outline: 2px solid white; */
 }
 
 .subscribe {
+  /* margin-right: 93px; */
+  /* outline: 2px solid white; */
   &__social-list {
     display: flex;
-    justify-content: center;
-    align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
-    margin-bottom: 60px;
+
+    /* outline: 2px solid white; */
   }
 
   &__item + &__item {
@@ -116,26 +121,37 @@
 }
 
 .subscription {
-  //   margin-left: auto;
+  margin-left: auto;
 
   &__icon {
+    /* position: absolute; */
+    /* top: 50%; */
+    /* right: 0; */
     fill: currentColor;
     margin-left: 10px;
+    /* transform: translateX(-75%) translateY(-50%); */
   }
 }
 
+/* .flex-subscription {
+  display: flex;
+  flex-direction: column;
+} */
+
 .email--flex {
-  //   display: flex;
-  //   align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .subscription__button {
   display: flex;
   align-items: center;
+  /* position: relative; */
+  /* display: block; */
   width: 200px;
   height: 50px;
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
   padding: 10px 29px;
 
   cursor: pointer;
@@ -170,9 +186,9 @@
 }
 
 .email__input {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 20px;
+  /* display: block; */
+  margin: 0;
+  margin-right: 12px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 15px;

@@ -8,3 +8,11 @@ body {
   /* or 171% */
   letter-spacing: 0.03em;
 }
+
+body.mobile-menu-open {
+  overflow: hidden;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
