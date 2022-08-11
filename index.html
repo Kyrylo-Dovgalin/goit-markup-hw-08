@@ -188,35 +188,62 @@
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="services__list">
             <li class="services__item">
-              <a class="services__link" href=""
-                ><img
-                  class="services__pic services__pic--no-gap"
-                  src="./images/html-coding.jpg"
-                  alt="Верстка"
-                  width="370"
-                />
+              <a class="services__link" href="">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/html-coding@1x-lg.jpg 1x,
+                      ./images/html-coding@2x-lg.jpg 2x
+                    "
+                  />
+
+                  <img
+                    class="services__pic services__pic--no-gap"
+                    src="./images/html-coding.jpg"
+                    alt="Верстка"
+                  />
+                </picture>
+
                 <h3 class="services__name">Десктопные приложения</h3></a
               >
             </li>
             <li class="services__item">
-              <a class="services__link" href=""
-                ><img
-                  class="services__pic services__pic--no-gap"
-                  src="./images/mobile-adaptation.jpg"
-                  alt="Адаптация под мобильные утройства"
-                  width="370"
-                />
+              <a class="services__link" href="">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/mobile-adaption@1x-lg.jpg 1x,
+                      ./images/mobile-adaption@2x-lg.jpg 2x
+                    "
+                  />
+
+                  <img
+                    class="services__pic services__pic--no-gap"
+                    src="./images/mobile-adaptation.jpg"
+                    alt="Адаптация под мобильные утройства"
+                  />
+                </picture>
+
                 <h3 class="services__name">Мобильные приложения</h3></a
               >
             </li>
             <li class="services__item">
-              <a class="services__link" href=""
-                ><img
-                  class="services__pic services__pic--no-gap"
-                  src="./images/styling.jpg"
-                  alt="Стилизация"
-                  width="370"
-                />
+              <a class="services__link" href="">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/styling@1x-lg.jpg 1x,
+                      ./images/styling@2x-lg.jpg 2x
+                    "
+                  />
+
+                  <img
+                    class="services__pic services__pic--no-gap"
+                    src="./images/styling.jpg"
+                    alt="Стилизация"
+                  />
+                </picture>
+
                 <h3 class="services__name">Дизайнерские решения</h3></a
               >
             </li>
@@ -229,12 +256,38 @@
           <h2 class="title section__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                class="team__pic team__pic--no-gap"
-                src="./images/igor-demianenko.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/igor-demianenko@1x-lg.jpg 1x,
+                    ./images/igor-demianenko@2x-lg.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/igor-demianenko@1x-md.jpg 1x,
+                    ./images/igor-demianenko@2x-md.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/igor-demianenko@1x-sm.jpg 1x,
+                    ./images/igor-demianenko@2x-sm.jpg 2x
+                  "
+                />
+
+                <img
+                  class="team__pic team__pic--no-gap"
+                  src="./images/igor-demianenko@1x-sm.jpg"
+                  alt="Игорь Демьяненко"
+                />
+              </picture>
+
               <h3 class="team__member">Игорь Демьяненко</h3>
               <p class="team__position">Product Designer</p>
               <ul class="social-list team__social-list">
@@ -289,12 +342,38 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                class="team__pic team__pic--no-gap"
-                src="./images/olga-repina.jpg"
-                alt="Ольга Репина"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/olga-repina@1x-lg.jpg 1x,
+                    ./images/olga-repina@2x-lg.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/olga-repina@1x-md.jpg 1x,
+                    ./images/olga-repina@2x-md.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/olga-repina@1x-sm.jpg 1x,
+                    ./images/olga-repina@2x-sm.jpg 2x
+                  "
+                />
+
+                <img
+                  class="team__pic team__pic--no-gap"
+                  src="./images/olga-repina.jpg"
+                  alt="Ольга Репина"
+                />
+              </picture>
+
               <h3 class="team__member">Ольга Репина</h3>
               <p class="team__position">Frontend Developer</p>
               <ul class="social-list team__social-list">
@@ -349,12 +428,38 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                class="team__pic team__pic--no-gap"
-                src="./images/nikolay-tarasov.jpg"
-                alt="Николай Тарасов"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/nikolay-tarasov@1x-lg.jpg 1x,
+                    ./images/nikolay-tarasov@2x-lg.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/nikolay-tarasov@1x-md.jpg 1x,
+                    ./images/nikolay-tarasov@2x-md.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/nikolay-tarasov@1x-sm.jpg 1x,
+                    ./images/nikolay-tarasov@2x-sm.jpg 2x
+                  "
+                />
+
+                <img
+                  class="team__pic team__pic--no-gap"
+                  src="./images/nikolay-tarasov.jpg"
+                  alt="Николай Тарасов"
+                />
+              </picture>
+
               <h3 class="team__member">Николай Тарасов</h3>
               <p class="team__position">Marketing</p>
               <ul class="social-list team__social-list">
@@ -409,12 +514,38 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                class="team__pic team__pic--no-gap"
-                src="./images/mihail-ermakov.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/mihail-ermakov@1x-lg.jpg 1x,
+                    ./images/mihail-ermakov@2x-lg.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/mihail-ermakov@1x-md.jpg 1x,
+                    ./images/mihail-ermakov@2x-md.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mihail-ermakov@1x-sm.jpg 1x,
+                    ./images/mihail-ermakov@2x-sm.jpg 2x
+                  "
+                />
+
+                <img
+                  class="team__pic team__pic--no-gap"
+                  src="./images/mihail-ermakov.jpg"
+                  alt="Михаил Ермаков"
+                />
+              </picture>
+
               <h3 class="team__member">Михаил Ермаков</h3>
               <p class="team__position">UI Designer</p>
               <ul class="social-list team__social-list">
