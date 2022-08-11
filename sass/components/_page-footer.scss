@@ -5,16 +5,19 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  text-align: center;
-
   --background-color: #2f303a;
   background-color: var(--background-color);
+  min-width: $mobile;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 
   &__address {
     margin-bottom: 60px;
-    // @media screen and (min-width: $tablet) {
-    //   margin-right: 70px;
-    // }
+    @media screen and (min-width: $desktop) {
+      margin-right: 70px;
+    }
   }
 }
 
@@ -116,7 +119,9 @@
 }
 
 .subscription {
-  //   margin-left: auto;
+  @media screen and (min-width: $desktop) {
+    margin-left: auto;
+  }
 
   &__icon {
     fill: currentColor;
@@ -125,8 +130,10 @@
 }
 
 .email--flex {
-  //   display: flex;
-  //   align-items: center;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .subscription__button {
@@ -157,6 +164,9 @@
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: $desktop) {
+    margin: 0;
+  }
 
   &:hover,
   &:focus {
@@ -186,6 +196,11 @@
   color: #ffffff;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: $desktop) {
+    margin: 0;
+    margin-right: 12px;
+  }
 
   &:focus,
   &:hover {

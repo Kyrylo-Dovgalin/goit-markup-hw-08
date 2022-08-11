@@ -8,21 +8,21 @@
 // base styles
 @import "./base/base";
 @import "./base/container";
-// @import "./base/section";
+@import "./base/section";
 
 // components styles
 @import "./components/page-header";
 @import "./components/logo";
 @import "./components/menu";
 
-// @import "./components/hero";
-// @import "./components/benefits";
+@import "./components/hero";
+@import "./components/benefits";
 @import "./components/services";
-// @import "./components/team";
-// @import "./components/social-list";
-// @import "./components/clients";
-// @import "./components/projects";
+@import "./components/team";
+@import "./components/social-list";
+@import "./components/clients";
+@import "./components/projects";
 @import "./components/page-footer";
-// @import "./components/modal";
+@import "./components/modal";
 
 // layout styles

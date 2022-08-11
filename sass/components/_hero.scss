@@ -1,5 +1,6 @@
 /* Секция герой */
 .hero {
+  min-width: $mobile;
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
@@ -23,21 +24,30 @@
 
   /* Оформления заголовка */
   &__title {
-    margin: 0;
-    margin-bottom: 30px;
-
-    /* background-color: #757575; временное значение */
-    --title-color: #ffffff;
-    color: var(--title-color);
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    /* or 136% */
+    font-size: 26px;
+    line-height: calc(42 / 26);
+    /* or 162% */
+
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    /* outline: 2px solid black;  */
+    --title-color: #ffffff;
+    color: var(--title-color);
+
+    @media screen and (min-width: $desktop) {
+      margin: 0;
+      margin-bottom: 30px;
+
+      /* background-color: #757575; временное значение */
+
+      font-size: 44px;
+      line-height: 1.36;
+      /* or 136% */
+
+      /* outline: 2px solid black;  */
+    }
   }
 }
 

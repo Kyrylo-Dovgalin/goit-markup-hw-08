@@ -1,20 +1,13 @@
 .team {
-  min-width: $mobile;
   /* оформление списка команды */
   &__list {
+    display: flex;
     margin: 0;
     padding: 0;
+
     list-style: none;
 
-    @media screen and (min-width: $tablet) {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-    }
-
-    @media screen and (min-width: $desktop) {
-    }
+    /* outline: 2px solid teal; */
   }
 
   &__item {
@@ -28,15 +21,13 @@
 
     /* outline: 2px solid purple; */
   }
-  @media screen and (max-width: 767px) {
-    &__item:not(:last-child) {
-      margin-bottom: 30px;
-    }
+
+  &__item + &__item {
+    margin-left: 30px;
   }
 
   &__pic--no-gap {
     display: block;
-    margin: 0 auto;
     margin-bottom: 30px;
   }
 

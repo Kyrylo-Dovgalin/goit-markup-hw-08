@@ -1,31 +1,33 @@
+/* .projects .title {
+  margin: 0;
+
+  color: var(--title-color);
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+
+  outline: 2px solid purple; 
+} */
+
 /* оформление списка фильтра */
 .filter {
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+  justify-content: center;
   margin: 0;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 
   list-style: none;
 
-  @media screen and (min-width: $tablet) {
-    justify-content: center;
-    margin-bottom: 30px;
-  }
+  /* outline: 2px solid orange; */
 
-  @media screen and (min-width: $desktop) {
-    margin-bottom: 50px;
+  &__item:not(:last-child) {
+    margin-right: 8px;
   }
-
-  //   &__item:not(:last-child) {
-  //     margin-right: 8px;
-  //   }
 }
 
 /* оформление кнопок фильтра */
 .filter__button {
-  display: inline-block;
   padding-top: 6px;
   padding-bottom: 6px;
   padding-right: 22px;
@@ -60,15 +62,12 @@
 
 /* оформление списка проектов */
 .projects {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  list-style: none;
 
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
+  list-style: none;
 
   /* outline: 2px solid green; */
   &__pic--no-gap {
@@ -77,8 +76,6 @@
 
   /* оформление карточки проекта */
   &__link {
-    display: flex;
-    flex-direction: column;
     text-decoration: none;
   }
 
@@ -151,16 +148,9 @@
 }
 
 .projects__item {
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
-
-  @media screen and (min-width: $tablet) {
-    flex-basis: 354px;
-  }
-  @media screen and (min-width: $desktop) {
-    flex-basis: 370px;
-  }
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -172,13 +162,13 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 
-  //   &:nth-child(3n) {
-  //     margin-right: 0;
-  //   }
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 
-  //   &:nth-child(n + 7) {
-  //     margin-bottom: 0;
-  //   }
+  &:nth-child(n + 7) {
+    margin-bottom: 0;
+  }
 }
 
 .thumb-wrap {

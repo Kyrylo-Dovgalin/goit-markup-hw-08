@@ -3,9 +3,7 @@
 }
 
 .section--NoBtmPdn {
-  @media screen and (min-width: $desktop) {
-    @include section(null, 0);
-  }
+  @include section(null, 0);
 }
 
 .section--grey {

@@ -8,59 +8,63 @@
 
     background-color: #f5f4fa;
     border-radius: 4px;
+
+    /* outline: 2px solid green; */
   }
 
   &__icon {
   }
 
+  /* Оформление заголовка преимуществ 
+.section__title {
+  margin: 0;
+
+  color: var(--title-color);
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+
+   outline: 2px solid green; 
+}
+*/
+
   /* оформление списка преимуществ */
   &__list {
+    display: flex;
     margin: 0;
     padding: 0;
 
     list-style: none;
 
-    @media screen and (min-width: $tablet) {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 30px;
-    }
-    @media screen and (min-width: $desktop) {
-      display: flex;
-    }
+    /* outline: 2px solid yellow; */
   }
 
   &__item {
-    margin: 0 auto;
-
-    @media screen and (min-width: $tablet) {
-      flex-basis: 354px;
-    }
-    @media screen and (min-width: $desktop) {
-      flex-basis: 270px;
-    }
+    width: 270px;
   }
 
   &__item + &__item {
-    // margin-left: 30px;
+    margin-left: 30px;
   }
 
   /* оформление преимущества */
   &__title {
     margin: 0;
     margin-bottom: 10px;
-    text-align: center;
 
     color: var(--title-color);
     font-style: normal;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+
+    /* outline: 2px solid blueviolet; */
   }
 
   &__description {
     margin: 0;
+
+    /* outline: 2px solid brown; */
   }
 }
 
