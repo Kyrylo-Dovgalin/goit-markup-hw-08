@@ -9,9 +9,9 @@
   padding-right: 15px;
   min-width: $mobile;
 
-  // @media screen and (min-width: $mobile) {
-  //   width: $mobile;
-  // }
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
 
   @media screen and (min-width: $tablet) {
     width: $tablet;
