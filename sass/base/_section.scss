@@ -1,5 +1,8 @@
 .section {
-  @include section();
+  @include section(60px, 60px);
+  @media screen and (min-width: $desktop) {
+    @include section();
+  }
 }
 
 .section--NoBtmPdn {

@@ -10,9 +10,6 @@
     border-radius: 4px;
   }
 
-  &__icon {
-  }
-
   /* оформление списка преимуществ */
   &__list {
     margin: 0;
@@ -31,19 +28,17 @@
     }
   }
 
-  &__item {
-    margin: 0 auto;
+  &__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 
+  &__item {
     @media screen and (min-width: $tablet) {
       flex-basis: 354px;
     }
     @media screen and (min-width: $desktop) {
       flex-basis: 270px;
     }
-  }
-
-  &__item + &__item {
-    // margin-left: 30px;
   }
 
   /* оформление преимущества */
