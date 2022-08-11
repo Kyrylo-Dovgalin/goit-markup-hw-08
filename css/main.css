@@ -130,10 +130,16 @@ body.modal-open {
   margin: 0;
   margin-bottom: 50px;
   color: var(--title-color);
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.1785714286;
   text-align: center;
   /* outline: 2px solid green; */
+}
+@media screen and (min-width: 1200px) {
+  .section__title {
+    font-size: 36px;
+    line-height: 1.1666666667;
+  }
 }
 
 .header {
@@ -643,6 +649,11 @@ body.modal-open {
   line-height: 1.14;
   text-transform: uppercase;
 }
+@media screen and (min-width: 768px) {
+  .benefits__title {
+    text-align: left;
+  }
+}
 .benefits__description {
   margin: 0;
 }
@@ -970,7 +981,6 @@ body.modal-open {
   text-decoration: none;
 }
 .projects__details {
-  display: none;
   position: absolute;
   left: 0;
   top: 0;
@@ -1253,7 +1263,7 @@ body.modal-open {
   padding-bottom: 15px;
   padding-left: 15px;
   padding-right: 15px;
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1268,6 +1278,7 @@ body.modal-open {
   .email__input {
     margin: 0;
     margin-right: 12px;
+    width: 358px;
   }
 }
 .email__input:focus, .email__input:hover {

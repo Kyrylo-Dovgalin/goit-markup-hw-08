@@ -57,6 +57,10 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+
+    @media screen and (min-width: $tablet) {
+      text-align: left;
+    }
   }
 
   &__description {
