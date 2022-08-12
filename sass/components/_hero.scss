@@ -2,12 +2,16 @@
 .hero {
   min-width: $mobile;
   max-width: 1600px;
-  height: 600px;
+  // height: 600px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
 
-  padding-top: 200px;
-  padding-bottom: 200px;
+  @media screen and (min-width: $desktop) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 
   background-color: #c4c4c4;
   // mobile screen
@@ -77,6 +81,8 @@
 
   /* Оформления заголовка */
   &__title {
+    margin: 0;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 26px;
     line-height: calc(42 / 26);
@@ -90,9 +96,6 @@
     color: var(--title-color);
 
     @media screen and (min-width: $desktop) {
-      margin: 0;
-      margin-bottom: 30px;
-
       /* background-color: #757575; временное значение */
 
       font-size: 44px;

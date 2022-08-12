@@ -144,12 +144,17 @@ img {
 
 .section__title {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: var(--title-color);
   font-size: 28px;
   line-height: 1.1785714286;
   text-align: center;
   /* outline: 2px solid green; */
+}
+@media screen and (min-width: 1200px) {
+  .section__title {
+    margin-bottom: 50px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .section__title {
@@ -166,7 +171,6 @@ img {
 /* флексбокс для навигации */
 .main-nav {
   margin: 0;
-  margin-bottom: 302px;
 }
 @media screen and (min-width: 768px) {
   .main-nav {
@@ -505,7 +509,16 @@ img {
     overflow: scroll;
   }
   .menu-container.is-open {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 @media screen and (min-width: 768px) {
@@ -526,11 +539,10 @@ img {
 .hero {
   min-width: 480px;
   max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: #c4c4c4;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero@1x-sm.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero@1x-sm.jpg);
@@ -539,6 +551,12 @@ img {
   background-position: center;
   /* outline: 2px solid black;  */
   /* Оформления заголовка */
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
@@ -571,6 +589,8 @@ img {
   }
 }
 .hero__title {
+  margin: 0;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.6153846154;
@@ -583,8 +603,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
-    margin: 0;
-    margin-bottom: 30px;
     /* background-color: #757575; временное значение */
     font-size: 44px;
     line-height: 1.36;
@@ -649,32 +667,28 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
 }
 @media screen and (min-width: 768px) {
   .benefits__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    gap: 30px;
   }
-}
-@media screen and (min-width: 1200px) {
-  .benefits__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-.benefits__item:not(:last-child) {
-  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .benefits__item {
+    margin: 0;
     -ms-flex-preferred-size: 354px;
         flex-basis: 354px;
   }
@@ -1132,6 +1146,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .footer__address {
+    margin: 0;
     margin-right: 70px;
   }
 }
@@ -1197,7 +1212,6 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 60px;
 }
 .subscribe__item + .subscribe__item {
   margin-left: 10px;
@@ -1231,8 +1245,17 @@ img {
   background-color: var(--focus-color);
 }
 
+.subscription {
+  margin-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .subscription {
+    margin: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .subscription {
+    margin: 0;
     margin-left: auto;
   }
 }

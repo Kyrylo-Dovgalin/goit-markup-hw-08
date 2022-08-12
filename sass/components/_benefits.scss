@@ -14,26 +14,28 @@
   &__list {
     margin: 0;
     padding: 0;
-
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 
     @media screen and (min-width: $tablet) {
-      display: flex;
+      flex-direction: row;
       flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 30px;
+      // justify-content: space-between;
     }
-    @media screen and (min-width: $desktop) {
-      display: flex;
-    }
+    // @media screen and (min-width: $desktop) {
+
+    // }
   }
 
-  &__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
+  // &__item:not(:last-child) {
+  //   margin-bottom: 30px;
+  // }
 
   &__item {
     @media screen and (min-width: $tablet) {
+      margin: 0;
       flex-basis: 354px;
     }
     @media screen and (min-width: $desktop) {
